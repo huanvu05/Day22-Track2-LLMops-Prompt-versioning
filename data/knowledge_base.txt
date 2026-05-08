@@ -1,0 +1,41 @@
+Machine Learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data. The three main types of machine learning are supervised learning, unsupervised learning, and reinforcement learning.
+
+Supervised learning involves learning a function that maps an input to an output based on example input-output pairs. Examples include classification and regression. Unsupervised learning finds hidden patterns or intrinsic structures in input data without labels. Examples include clustering (like K-means) and association. Reinforcement learning is about taking suitable action to maximize reward in a particular situation.
+
+Overfitting occurs when a model learns the training data too well, including its noise and outliers, leading to poor generalization on new data. It often happens with overly complex models. Regularization techniques like L1 (Lasso) and L2 (Ridge) add penalty terms to the loss function to discourage complexity and prevent overfitting.
+
+The bias-variance tradeoff is a fundamental concept. High bias can cause an algorithm to miss relevant relations between features and target outputs (underfitting). High variance can cause an algorithm to model the random noise in the training data, rather than the intended outputs (overfitting).
+
+Cross-validation is a technique for assessing how the results of a statistical analysis will generalize to an independent data set. It is mainly used to estimate the skill of a machine learning model on unseen data.
+
+Backpropagation is a widely used algorithm in training feedforward neural networks. It computes the gradient of the loss function with respect to the weights of the network for a single input-output example, and does so efficiently using the chain rule.
+
+Convolutional Neural Networks (CNNs) are a class of deep neural networks, most commonly applied to analyzing visual imagery. They use pooling layers to reduce spatial dimensions, which decreases computational complexity and helps in translation invariance.
+
+Long Short-Term Memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It addresses the vanishing gradient problem by using gating mechanisms to control information flow.
+
+Common activation functions in neural networks include ReLU (Rectified Linear Unit), Sigmoid, and Tanh. ReLU is often preferred for hidden layers as it helps with the vanishing gradient problem.
+
+The Transformer architecture, introduced in the paper "Attention Is All You Need" (2017), revolutionized NLP. It relies on self-attention mechanisms to weigh the importance of different parts of the input data. Unlike RNNs, Transformers process entire sequences in parallel, allowing for much greater scale.
+
+Word embeddings (like Word2vec or GloVe) are representations of words as dense vectors where semantically similar words are close in the vector space.
+
+BERT (Bidirectional Encoder Representations from Transformers) is a transformer-based machine learning technique for NLP pre-training. It uses masked language modeling and next sentence prediction.
+
+GPT (Generative Pre-trained Transformer) is a family of LLMs trained autoregressively to predict the next token. GPT-4 supports up to 128K tokens of context.
+
+Instruction tuning is the process of fine-tuning LLMs on a collection of datasets described via instructions. Reinforcement Learning from Human Feedback (RLHF) is used to align LLMs with human preferences for helpfulness and safety.
+
+Chain-of-thought (CoT) prompting is a technique that enables complex reasoning capabilities through intermediate reasoning steps.
+
+Retrieval-Augmented Generation (RAG) is a technique for enhancing the output of an LLM by providing it with relevant information retrieved from an external knowledge base. A RAG pipeline typically consists of a retriever and a generator. Dense retrieval uses neural embeddings and similarity search (like cosine similarity or Euclidean distance).
+
+Chunking strategy is important in RAG to ensure retrieved passages are relevant and fit within the LLM's context window. Strategies include fixed-size, semantic, or hierarchical chunking.
+
+FAISS (Facebook AI Similarity Search) is a library for efficient similarity search and clustering of dense vectors. HNSW (Hierarchical Navigable Small World) is a popular algorithm for approximate nearest neighbor search. Hybrid search combines vector search with keyword-based search (like BM25).
+
+LangChain is a framework for developing applications powered by LLMs. LangChain Expression Language (LCEL) is a declarative way to chain components. LangGraph is used for building stateful, multi-actor applications with cycles. LangSmith is a platform for debugging, testing, and monitoring LLM applications. It provides tracing, datasets, and a Prompt Hub for versioning templates.
+
+RAGAS (RAG Assessment) is a framework for evaluating RAG pipelines. Key metrics include Faithfulness (checking if claims in the answer are supported by context), Answer Relevancy, Context Recall (comparing retrieved context to ground truth), and Context Precision.
+
+Guardrails AI is a framework for adding validation and safety checks to LLM outputs. It can detect and redact PII (Personally Identifiable Information) and ensure structured output (like JSON) is valid and well-formatted.

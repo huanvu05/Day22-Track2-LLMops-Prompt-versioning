@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+data/faiss_index/
+evidence/*.png
+evidence/*.txt
+evidence/*.json
+venv/
+node_modules/
